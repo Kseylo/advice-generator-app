@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="src/style.css" />
+        <script type="module" src="src/main.ts"></script>
+        <title>Advice Generator App</title>
+    </head>
+    <body
+        class="flex h-dvh flex-col items-center justify-center bg-neutral-dark-blue"
+    >
+        <main
+            class="relative flex hidden w-[20rem] flex-col items-center gap-6 rounded-2xl bg-neutral-dark-grayish-blue px-5 pb-16 pt-10 md:w-[33.75rem]"
+        >
+            <p
+                class="header text-center text-xs uppercase text-primary-neon-green"
+            ></p>
+            <q class="text-center text-2xl text-primary-light-cyan"></q>
+            <picture>
+                <source
+                    srcset="src/assets/images/pattern-divider-mobile.svg"
+                    media="(max-width: 768px)"
+                />
+                <source
+                    srcset="src/assets/images/pattern-divider-desktop.svg"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="src/assets/images/pattern-divider-desktop.svg"
+                    alt="divider"
+                />
+            </picture>
+            <button
+                class="absolute -bottom-8 flex h-16 w-16 items-center justify-center rounded-full bg-primary-neon-green shadow transition-all"
+            >
+                <img src="src/assets/images/icon-dice.svg" alt="dice" />
+            </button>
+        </main>
+    </body>
+</html>
